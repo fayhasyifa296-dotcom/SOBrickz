@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 from datetime import date
 import io
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+from reportlab.platypus import SimpleDocTemplate
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 
@@ -266,3 +266,4 @@ elif menu == "Master Barang":
             conn.commit()
             conn.close()
             st.warning(f"❌ Barang '{barang_hapus}' sudah dihapus.")
+
